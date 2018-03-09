@@ -1,8 +1,10 @@
-﻿# TensorFlow笔记二：MNIST机器学习入门
+ # TensorFlow笔记二：MNIST机器学习入门
 
 标签（空格分隔）： TensorFlow 深度学习
 
-参考资料[^MNIST数据下载][^MNIST机器学习入门]
+参考资料
+[^2.2MNIST数据下载] 
+[^2.3MNIST机器学习入门]
 
 本文是基于“TensorFlow中文社区”[^中文社区]的教程（2.2+2.3）而写的笔记。
 本文的目录如下：
@@ -135,9 +137,9 @@ print sess.run(accuracy, feed_dict={x: mnist.test.images, y_: mnist.test.labels}
 ---
 [^中文社区]:http://www.tensorfly.cn/
 
-[^MNIST数据下载]: http://www.tensorfly.cn/tfdoc/tutorials/mnist_download.html
+[^2.2MNIST数据下载]: http://www.tensorfly.cn/tfdoc/tutorials/mnist_download.html
 
-[^MNIST机器学习入门]: http://www.tensorfly.cn/tfdoc/tutorials/mnist_beginners.html
+[^2.3MNIST机器学习入门]: http://www.tensorfly.cn/tfdoc/tutorials/mnist_beginners.html
 
 
 
