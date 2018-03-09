@@ -1,3 +1,4 @@
+
 # MNIST test, softmax
 
 #1 input mnist data
@@ -26,6 +27,7 @@ cross_entropy = -tf.reduce_sum(y_*tf.log(y))
 
 train_step = tf.train.GradientDescentOptimizer(0.01).minimize(cross_entropy)
 
+#CHANGE
 init = tf.global_variables_initializer()
 
 #start a session
