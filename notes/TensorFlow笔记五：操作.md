@@ -4,9 +4,8 @@
 
 参考[^专栏文章]
 
-
 ---
-##1 constants 常量
+## 1 constants 常量
 ```
 #1
 a = tf.constant(5)
@@ -20,8 +19,10 @@ print sess.run(a)
 
 >>>[2 2] # This is the output result.
 ```
+
 ---
-##1.1 special constant value
+### 1.1 special constant value
+
 ```
 #1 zeros SEE #3
 tf.zeros()
@@ -60,7 +61,7 @@ tf.range(3, limit=18, delta=3)
 >> [3, 6, 9, 12, 15]
 ```
 ---
-##1.2 random
+### 1.2 random
 ```
 #1 random_normal
 tf.random_normal()
@@ -101,7 +102,7 @@ with tf.Session() as sess:
     
 w.initializer # 初始化
 ```
-##2.1 variable operation
+### 2.1 variable operation
 ```
 # Get result:
 w = tf.Variable(tf.truncated_normal([10, 10], name='normal'))
@@ -131,7 +132,7 @@ with tf.Session() as sess:
     print(w.eval())
 >> 100
 ```
-##2.2 Session 是函数式编程
+### 2.2 Session 是函数式编程
 ```
 x = assign() 
 x = assign_add()
@@ -150,7 +151,7 @@ sess1.close()
 sess2.close()
 ```
 ---
-##3 placeholder 占位符
+## 3 placeholder 占位符
 ```
 tf.placeholder() 
 
@@ -164,7 +165,7 @@ with tf.Session() as sess:
 ```
 ---
 
-##4 lazy loading (should AVOID)
+## 4 lazy loading (should AVOID)
 May causing low speed of loading speed. 
 ```
 # GOOD
@@ -188,19 +189,19 @@ with tf.Session() as sess:
 ```
 
 ---
-##5 operaton
+## 5 operaton
 ```
 c = tf.add(a, b)
 c = tf.multiply(a,b,name='dot_production')
 ```
 ---
-##6 excution
+## 6 excution
 ```
 with tf.Session() as sess:
 	print(sess.run())
 ```
 ---
-##tensorflow board
+## 7 tensorflow board
 
 ```
 #in terminal:
