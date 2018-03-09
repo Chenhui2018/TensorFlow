@@ -1,3 +1,4 @@
+
 # TensorFlow笔记二：MNIST机器学习入门
 
 标签（空格分隔）： TensorFlow 深度学习
@@ -11,6 +12,7 @@
 > * python程序怎么运行
 > * 数据集下载
 > * Softmax回归介绍
+> * 代码改动
 > * 完整代码
 
 ---
@@ -81,6 +83,14 @@ gedit mnist_test_softmax.py #编辑
 详细的算法参见其他的说明。
 
 ---
+## 代码改动
+见“#CHANGE”
+```
+init = tf.initialize_all_variables()
+替换成
+init = tf.global_variables_initializer()
+```
+---
 
 ## 完整的代码
 或者你可以在 codes/mnist_test_softmax.py 找到
@@ -115,6 +125,7 @@ cross_entropy = -tf.reduce_sum(y_*tf.log(y))
 
 train_step = tf.train.GradientDescentOptimizer(0.01).minimize(cross_entropy)
 
+#CHANGE
 init = tf.global_variables_initializer()
 
 #start a session
