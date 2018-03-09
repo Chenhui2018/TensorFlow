@@ -1,4 +1,4 @@
-﻿# TensorFlow笔记一：TensorFlow pip安装
+# TensorFlow笔记一：TensorFlow pip安装
 
 标签（空格分隔）： TensorFlow 深度学习
 
@@ -12,6 +12,7 @@
 
 ---
 ## 墙内用户之殇及其解决办法
+
 安装好ubuntu16，假如已经换了 **软件源** 和 **pip源** 的兄弟姐妹，忽略本节。
 
 已经可以访问外网的，也可以忽略。但是亲测，国内源会更快一点。其实都是看网速。
@@ -20,11 +21,13 @@
 因为，墙之弥高，所以，换源。
 
 **###1** 换软件源
+
 ui界面操作[^换源]
 
 System setting -> Software & update -> Download from -> Othre... -> China -> https://mirror.tuna.tsinghua.edu.cn/ubuntu （清华的）
 
 **###2** 换pip源
+
 这部应该在安装pip（python-pip）之后进行，先写在这里。
 
 在用户目录下（也就是Desk,Download,Pictures...所在），CMD内，新建.pip
