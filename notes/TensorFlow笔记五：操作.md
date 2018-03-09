@@ -78,7 +78,7 @@ tf.muiltinomial()
 tf.random_gamma()
 ```
 ---
-##2 variables
+## 2 variables
 ```
 a = tf.Variable(2, name='scalar')
 b = tf.Variable([2, 3], name='vector')
