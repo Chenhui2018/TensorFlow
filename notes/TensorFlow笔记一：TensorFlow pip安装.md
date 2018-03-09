@@ -6,8 +6,37 @@
 
 本文是基于“TensorFlow中文社区”[^中文社区]的教程（1.1~1.3）而写的笔记。
 本文的目录如下：
+> * 墙内用户之殇及其解决办法
 > * TensorFlow pip安装
 > * 教程文档的修正
+
+---
+## 墙内用户之殇及其解决办法
+安装好ubuntu16，假如已经换了 **软件源** 和 **pip源** 的兄弟姐妹，忽略本节。
+已经可以访问外网的，也可以忽略。但是亲测，国内源会更快一点。其实都是看网速。
+
+因为，墙之弥高，所以，换源。
+
+**###1** 换软件源
+ui界面操作[^换源]
+System setting -> Software & update -> Download from -> Othre... -> China -> https://mirror.tuna.tsinghua.edu.cn/ubuntu （清华的）
+
+**###2** 换pip源
+这部应该在安装pip（python-pip）之后进行，先写在这里。
+
+在用户目录下（也就是Desk,Download,Pictures...所在），CMD内，新建.pip
+```
+mkdir .pip # 这是一个隐藏目录
+cd .pip 
+touch pip.config
+gedit pip.config
+```
+输入
+```
+[global]
+index-url = https://pypi.tuna.tsinghua.edu.cn/simple
+```
+OK。
 
 ---
 ## TensorFlow pip安装
@@ -41,6 +70,7 @@ keep move on, wishes you good luck!
 
 [^1.2下载与安装]: http://www.tensorfly.cn/tfdoc/get_started/os_setup.html
 
+[^换源]: https://www.linuxidc.com/Linux/2014-04/100476.htm
 
 
 
