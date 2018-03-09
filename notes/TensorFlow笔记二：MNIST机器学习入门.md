@@ -1,4 +1,4 @@
- # TensorFlow笔记二：MNIST机器学习入门
+# TensorFlow笔记二：MNIST机器学习入门
 
 标签（空格分隔）： TensorFlow 深度学习
 
@@ -21,7 +21,7 @@ import tensorflow as tf
 matrix1 = tf.constant([[3., 3.]])
 matrix2 = tf.constant([[2.],[2.]])
 
-# retur 'product' is the multiplication result of 2 matrixs.
+# 'product' is the multiplication result of 2 matrixs.
 product = tf.matmul(matrix1, matrix2)
 
 sess = tf.Session()
