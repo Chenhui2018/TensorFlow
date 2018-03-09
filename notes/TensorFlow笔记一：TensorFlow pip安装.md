@@ -20,13 +20,15 @@
 
 因为，墙之弥高，所以，换源。
 
-**###1** 换软件源
+
+**###1 换软件源**
 
 ui界面操作[^换源]
 
 System setting -> Software & update -> Download from -> Othre... -> China -> https://mirror.tuna.tsinghua.edu.cn/ubuntu （清华的）
 
-**###2** 换pip源
+
+**###2 换pip源**
 
 这部应该在安装pip（python-pip）之后进行，先写在这里。
 
