@@ -1,4 +1,4 @@
-﻿# TensorFlow笔记四：深入MNIST
+﻿# TensorFlow笔记三：深入MNIST
 
 标签（空格分隔）： TensorFlow 深度学习
 
