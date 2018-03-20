@@ -58,6 +58,8 @@ acc_op = tf.reduce_mean(tf.cast(correct_pred, tf.float32))
 # Training and Evaluating the model
 ################################
 
+saver = tf.train.Saver()
+
 # use session to run the calculation
 with tf.Session() as sess:
     # variables have to be initialized at the first place
@@ -97,3 +99,5 @@ with tf.Session() as sess:
     })
 
     submission.to_csv("titanic-submission.csv", index=False)
+	
+	  save_path = saver.save(sess, "model.ckpt");
