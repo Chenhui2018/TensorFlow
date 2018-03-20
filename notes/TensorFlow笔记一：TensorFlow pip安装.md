@@ -55,6 +55,18 @@ OK。
 一切按照教程走，没毛病。
 推荐“基于 VirtualEnv 的安装”
 
+"在 virtualenv 内, 安装 TensorFlow:"
+```
+(tensorflow)$ pip install --upgrade <$url_to_binary.whl>
+```
+命令修改如下：[^tensorflow清华包]
+```
+pip install \
+  -i https://pypi.tuna.tsinghua.edu.cn/simple/ \
+  https://mirrors.tuna.tsinghua.edu.cn/tensorflow/linux/cpu/tensorflow-1.6.0-cp27-none-linux_x86_64.whl
+```
+
+
 ***直到，步骤：***
 “接下来, 使用类似命令运行 TensorFlow 程序:”
 ```
@@ -84,6 +96,6 @@ keep move on, wishes you good luck!
 
 [^换源]: https://www.linuxidc.com/Linux/2014-04/100476.htm
 
-
+[^tensorflow清华包]: https://mirrors.tuna.tsinghua.edu.cn/help/tensorflow/
 
 
